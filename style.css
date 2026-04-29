@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f1ea;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #c89b3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #a57d2f;
+    transform: translateY(-3px);
+}
+
+.intro {
+    padding: 80px 10%;
+    text-align: center;
+    background-color: white;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    color: #5a3e1b;
+}
+
+.intro p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.gallery-section {
+    padding: 80px 8%;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.7rem;
+    color: #5a3e1b;
+    font-family: 'Merriweather', serif;
+}
+
+/* FIXED GALLERY LAYOUT */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+    border: 2px solid #e6d3b3;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+}
+
+/* FIXED IMAGE SIZE */
+.card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+/* BOXED TEXT DESIGN */
+.card-content {
+    padding: 22px;
+    background-color: #faf6ef;
+    border-top: 2px solid #e0cda9;
+}
+
+.card-content h3 {
+    background-color: #5a3e1b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.card-content p {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    color: #444;
+    line-height: 1.7;
+}
+
+footer {
+    background-color: #2b1d0f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .gallery-section,
+    .intro {
+        padding: 60px 5%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 240px;
+    }
+}
