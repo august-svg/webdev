@@ -116,7 +116,6 @@ header {
     box-shadow: 0 14px 28px rgba(0,0,0,0.18);
 }
 
-/* FIXED IMAGE SIZE */
 .card img {
     width: 100%;
     height: 320px;
@@ -124,11 +123,14 @@ header {
     display: block;
 }
 
-/* BOXED TEXT DESIGN */
 .card-content {
     padding: 22px;
     background-color: #faf6ef;
     border-top: 2px solid #e0cda9;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .card-content h3 {
@@ -142,12 +144,16 @@ header {
 }
 
 .card-content p {
-    background-color: white;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 12px;
     border: 1px solid #ddd;
     color: #444;
     line-height: 1.7;
+
+    min-height: 120px;
+    display: flex;
+    align-items: flex-start;
 }
 
 footer {
@@ -158,7 +164,6 @@ footer {
     margin-top: 50px;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
 
     .hero-content h1 {
