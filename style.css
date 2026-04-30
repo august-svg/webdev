@@ -15,7 +15,7 @@ header {
     position: relative;
     height: 100vh;
     padding-top: 60px; 
-    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+    background: url('images/background.png') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,19 +50,17 @@ header {
     display: inline-block;
     padding: 14px 30px;
     background-color: #c89b3c;
-    color: brown;
+    color: white;
     text-decoration: none;
     border-radius: 30px;
 }
 
-/* INTRO */
 .intro {
     padding: 80px 10%;
     text-align: center;
-    background: rgb(174, 82, 82);
+    background: whitesmoke;
 }
 
-/* GALLERY */
 .gallery-section {
     padding: 80px 8%;
 }
