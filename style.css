@@ -5,6 +5,8 @@
 }
 
 body {
+    padding-top: 1px;
+
     font-family: 'Poppins', sans-serif;
     background-color: #f4f1ea;
     color: #333;
@@ -126,7 +128,58 @@ header {
     color: white;
     cursor: pointer;
 }
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
 
+/* FLEX CONTAINER */
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+    background: #c89b3c;
+    color: white;
+}
 /* MOBILE */
 @media (max-width: 768px) {
     .gallery {
@@ -136,4 +189,68 @@ header {
     .hero-content h1 {
         font-size: 2.5rem;
     }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #gallery2 {
+    margin-top: 20px; /* controlled spacing instead of browser default */
 }
+}
+    
+   /* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1000;
+}
+
+/* FLEX CONTAINER */
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 12px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* NAV LINKS (THIS IS THE IMPORTANT PART) */
+.nav-links {
+    list-style: none;
+    display: flex;           /* makes it horizontal */
+    gap: 25px;               /* spacing between links */
+}
+
+/* REMOVE DEFAULT LINK STYLING */
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 6px 8px;
+    border-radius: 6px;
+    transition: 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+    background: #c89b3c;
+    color: white;
+}
+

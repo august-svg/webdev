@@ -11,6 +11,21 @@
 </head>
 <body>
 
+    <nav class="navbar">
+    <div class="nav-container">
+        <h2 class="logo">Philippine Heritage</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jared.html">Jared</a></li>
+            <li><a href="jaredo.html">Jaredo</a></li>
+            <li><a href="km.html">KM</a></li>
+            <li><a href="latrell.html">Latrell</a></li>
+            <li><a href="hawkins.html">Hawkins</a></li>
+            <li><a href="anton.html">Anton</a></li>
+        </ul>
+    </div>
+</nav>
+
     <header>
         <div class="overlay"></div>
         <div class="hero-content">
@@ -53,6 +68,7 @@
                        house in taal, Batangas. it is considered a historical place because it preserves Spanish era 
                        architecture and displays antiques, old photos, and artifacts that show how filipinos
                        lived in the past. it helps keep Taal's culture and history alive for future generations.
+                       ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                     </p>
                 </div>
             </div>
@@ -93,6 +109,7 @@
                         because it showcases original architecture, furniture, and design from the past, 
                         helping people understand how families lived in old Lipa. it also represents
                         the city's rich cultural and ancestral heritage. 
+                        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                     </p>
                 </div>
             </div>
@@ -168,6 +185,39 @@
             </div>
         </div> 
     </section>
+
+    <!-- LIGHTBOX ADDED (FIX ONLY) -->
+<div class="lightbox" id="lightbox">
+    <span id="closeBtn">&times;</span>
+    <img src = "images/background.png" id="lightboxImg" alt="Zoomed Image">
+</div>
+
+<!-- JAVASCRIPT ADDED (REQUIRED FOR ZOOM) -->
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const closeBtn = document.getElementById("closeBtn");
+
+document.querySelectorAll(".card img").forEach(img => {
+    img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+    });
+});
+
+closeBtn.onclick = () => {
+    lightbox.style.display = "none";
+};
+
+lightbox.onclick = (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.style.display = "none";
+    }
+};
+</script>
+
+</body>
+    
 </html>
 
 <div class="back-btn-container">
